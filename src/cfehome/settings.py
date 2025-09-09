@@ -18,7 +18,7 @@ from decouple import config
 BASE_DIR = Path(__file__).resolve().parent.parent
 REPO_DIR= BASE_DIR.parent
 TEMPLATES_DIR = REPO_DIR / "templates"
-
+PROJECT_NAME = config('PROJECT_NAME', cast=str, default="Unset Project Name")
 
 # Quick-start development settings - unsuitable for production See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 # SECURITY WARNING: keep the secret key used in production secret!
